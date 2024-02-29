@@ -52,7 +52,7 @@ df.isnull().sum()
 df.duplicated().sum() 
 
 df=df.drop(['Surname', 'Geography','Gender'], axis=1) 
-scaler=StandardScaler() # Normalize the da
+scaler=StandardScaler() 
 df=pd.DataFrame(scaler.fit_transform(df))
 df.head()
 
